@@ -1,23 +1,23 @@
 .d-flex {
-    display: flex;
+    display: flex; // Définit l'élément comme un conteneur flex
 }
 
 .flex-row {
-    flex-direction: row;
+    flex-direction: row; // Défini la direction de flex à gauche à droite
 }
 
 .flex-column {
-    flex-direction: column;
+    flex-direction: column; // Défini la direction de flex en haut en bas
 }
 
 .flex-fill {
-    flex: 1 1 auto;
+    flex: 1 1 auto; // Rend l'élément flexible pour se répartir le reste du espace
 }
 
 .justify-content-center {
-    justify-content: center;
+    justify-content: center; // Centre horizontalement les éléments d'un conteneur flex
 }
 
 .align-items-center {
-    align-items: center;
+    align-items: center; // Centre verticalement les éléments d'un conteneur flex
 }
