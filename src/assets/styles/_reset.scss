@@ -1,11 +1,11 @@
-/* Box sizing rules */
+// Box sizing rules
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; // Affecte tous les éléments et leurs avant/après-éléments avec un modèle de boîte border-box
 }
 
-/* Remove default margin and padding */
+// Remove default margin and padding
 *,
 body,
 h1,
@@ -17,8 +17,8 @@ figure,
 blockquote,
 dl,
 dd {
-    margin: 0;
-    padding: 0;
+    margin: 0; // Supprime toutes les marges par défaut
+    padding: 0; // Supprime tous les paddings par défaut
 }
 h1,
 h2,
@@ -26,51 +26,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: inherit;
+    font-size: inherit; // Les en-têtes héritent de la taille et du poids de police de leur parent
+    font-weight: inherit; // Les en-têtes héritent du poids de police de leur parent
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+// Remove list styles on ul, ol elements with a list role
 ul[role="list"],
 ol[role="list"] {
-    list-style: none;
+    list-style: none; // Supprime les styles de liste sur les éléments <ul> et <ol> ayant un rôle list
 }
 ul,
 ol {
-    list-style: none;
+    list-style: none; // Supprime les styles de liste sur tous les <ul> et <ol>
 }
 
-/* Set core root defaults */
+// Set core root defaults
 html:focus-within {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; // Applique un comportement fluide aux défilements lorsque le document est en focus
 }
 
-/* Set core body defaults */
+// Set core body defaults
 body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    min-height: 100vh; // Assure que le corps prend au moins la hauteur totale de la fenêtre
+    text-rendering: optimizeSpeed; // Optimise le rendu du texte pour une meilleure vitesse
+    line-height: 1.5; // Définit la hauteur des lignes à un ratio de 1.5
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; // Supprime les decorations par défaut sur les liens
+    color: inherit; // Les liens héritent de la couleur du texte parent
 }
 
-/* Make images easier to work with */
+// Make images easier to work with
 img,
 picture {
-    max-width: 100%;
-    display: block;
-    border-radius: var(--radius);
-    // object-fit: contain;
-    object-fit: cover;
+    max-width: 100%; // Assure que les images ne dépassent pas la largeur de leur conteneur
+    display: block; // Affiche les éléments comme des blocs pour éviter le comportement par défaut en ligne
+    border-radius: var(--radius); // Ajoute un rayon de bordure à l'image, où --radius est une variable CSS définie ailleurs
+    object-fit: cover; // Redimensionne les images pour qu'elles couvrent tout le conteneur tout en conservant la proportion
 }
 
-/* Inherit fonts for inputs and buttons */
+// Inherit fonts for inputs and buttons
 input,
 button,
 textarea,
 select {
-    font: inherit;
+    font: inherit; // Applique le même style de police à tous les éléments d'entrée
 }
